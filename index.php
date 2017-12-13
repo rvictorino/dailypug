@@ -21,6 +21,7 @@ function getCurrentDayImageURL() {
     <meta charset="utf-8">
     <title>Daily dose of pugs!</title>
     <link rel="stylesheet" href="/master.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   </head>
   <body style="background-image: url('<?php echo getCurrentDayImageURL(); ?>');">
     
