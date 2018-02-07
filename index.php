@@ -26,7 +26,7 @@ function getCurrentDayImageURL() {
   <body style="background-image: url('<?php echo getCurrentDayImageURL(); ?>');">
     <div class="disclaimer">
       <p>All images are licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons CC0</a>.</p>
-      <p>You can share your pugs picture by sending an email at: victorino.robin@gmail.com</p>
+      <p>You can share your pug pictures by sending an email at: victorino.robin@gmail.com</p>
     </div>
   </body>
 </html>

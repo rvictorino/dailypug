@@ -17,12 +17,14 @@ body {
 }
 .disclaimer {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
   text-align: right;
   max-width: 100%;
   font-size: 0.7em;
   line-height: 0.7em;
   font-family: sans-serif;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #222222;
+  color: #888888;
 }
