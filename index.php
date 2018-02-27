@@ -13,7 +13,7 @@
     </noscript>
 
     <div id="disclaimer">
-      <p>All images are licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons CC0</a>. You can share your pug pictures by sending an email at: victorino.robin@gmail.com</p>
+      <p>All images are licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons CC0</a>. You can share your pug pictures by sending an email at: contact@dailypug.ovh</p>
     </div>
 
     <script>
