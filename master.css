@@ -9,6 +9,7 @@ body {
   width: 100%;
   margin:0;
   border: none;
+  overflow: hidden;
 
   background: #eacda3; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #eacda3, #d6ae7b); /* Chrome 10-25, Safari 5.1-6 */
