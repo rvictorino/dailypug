@@ -8,8 +8,8 @@
   </head>
   <body>
 
-    <noscript data-src="image.php">
-      <img src="image.php" data-src="" alt="">
+    <noscript data-src="image.png">
+      <img src="image.png" data-src="" alt="">
     </noscript>
 
 
@@ -21,7 +21,7 @@
       [].forEach.call(document.querySelectorAll('noscript'), noscript => {
 	var img = new Image()
 	img.setAttribute('data-src', '')
-	img.parentNode.insertBefore(img, noscript)
+	noscript.parentNode.insertBefore(img, noscript)
 	img.onload = img => img.removeAttribute('data-src')
 	img.src = noscript.getAttribute('data-src')
       });
