@@ -23,7 +23,7 @@
 	var img = new Image()
 	img.setAttribute('data-src', '')
 	noscript.parentNode.insertBefore(img, noscript)
-	img.onload = img => img.removeAttribute('data-src')
+	img.onload = () => img.removeAttribute('data-src')
 	img.src = noscript.getAttribute('data-src')
       });
     </script>
