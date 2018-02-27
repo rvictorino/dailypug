@@ -1,20 +1,3 @@
-<?php
-define('IMAGEPATH', 'img/');
-
-function getCurrentDayImageURL() {
-  $currentDayOfTheYear = date("z");
-  $images = glob(IMAGEPATH.'*');
-  $availableImagesCount = count($images);
-  // prevent error modulo 0 if count = 0
-  if($availableImagesCount == 0) {
-    throw new Exception('No image was found.');
-  }
-  $imageIndex = $currentDayOfTheYear % $availableImagesCount;
-  //TODO change array access to be sure images[x] is always the xth image in the glob list order
-  return $images[$imageIndex];
-}
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,10 +6,27 @@ function getCurrentDayImageURL() {
     <link rel="stylesheet" href="master.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   </head>
-  <body style="background-image: url('<?php echo getCurrentDayImageURL(); ?>');">
+  <body>
+
+    <noscript data-src="image.png">
+      <img src="/path/to/image.png" data-src="" alt="">
+    </noscript>
+
+
     <div class="disclaimer">
       <p>All images are licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons CC0</a>. You can share your pug pictures by sending an email at: victorino.robin@gmail.com</p>
     </div>
+
+    <script>
+      [].forEach.call(document.querySelectorAll('noscript'), noscript => {
+	var img = new Image()
+	img.setAttribute('data-src', '')
+	img.parentNode.insertBefore(img, noscript)
+	img.onload = img => img.removeAttribute('data-src')
+	img.src = noscript.getAttribute('data-src')
+      });
+    </script>
+
     <!-- Piwik -->
     <script type="text/javascript">
       var _paq = _paq || [];
