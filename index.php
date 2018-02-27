@@ -8,8 +8,8 @@
   </head>
   <body>
 
-    <noscript data-src="image.png">
-      <img src="/path/to/image.png" data-src="" alt="">
+    <noscript data-src="image.php">
+      <img src="image.php" data-src="" alt="">
     </noscript>
 
 
