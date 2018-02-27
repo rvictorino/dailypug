@@ -8,12 +8,13 @@
   </head>
   <body>
 
-    <noscript data-src="image.png">
-      <img src="image.png" data-src="" alt="">
-    </noscript>
+    <div id="image-container">
+      <noscript data-src="image.png">
+        <img src="image.png" data-src="" alt="">
+      </noscript>
+    </div>
 
-
-    <div class="disclaimer">
+    <div id="disclaimer">
       <p>All images are licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons CC0</a>. You can share your pug pictures by sending an email at: victorino.robin@gmail.com</p>
     </div>
 
