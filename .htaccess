@@ -1,0 +1,1 @@
+RewriteRule image.png image.php [NC]

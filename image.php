@@ -1,7 +1,8 @@
 <?php
 define('IMAGEPATH', 'img/');
 
-header('Content-Type: image/png')
+// define content type to serve image
+header('Content-Type: image/png');
 
 function getCurrentDayImageURL() {
   $currentDayOfTheYear = date("z");
