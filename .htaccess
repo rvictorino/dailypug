@@ -1,1 +1,4 @@
 RewriteRule image.png image.php [NC]
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R=301,L]
